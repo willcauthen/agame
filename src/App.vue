@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img class="logo" src="./assets/logo.png">
-    <hello></hello>
+    <Log></Log>
     <p>
       Welcome to your Vue.js app!
     </p>
@@ -23,11 +23,12 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Log from './components/logs/Log'
+// import Actions from './components/Actions'
 
 export default {
   components: {
-    Hello
+    Log
   }
 }
 </script>
