@@ -1,14 +1,9 @@
 <template>
   <div class="container" id="app">
     <div class="row">
-      <img class="logo" src="./assets/logo.png">
-      <log></log>
-      <actions></actions>
-      <stats></stats>
-      <h1></h1>
-      <p></p>
-      <p></p>
-      <p></p>
+      <log  id="logs-panel" class="four columns"></log>
+      <actions id="actions-panel" class="four columns"></actions>
+      <stats  id="stats-panel" class="four columns"></stats>
     </div>
   </div>
 </template>

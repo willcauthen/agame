@@ -1,6 +1,6 @@
 <template>
-  <div class="six columns">
-    <h2>{{ msg }}</h2>
+  <div id="actions">
+    <h2 id="actions-header">Action Panel</h2>
   </div>
 </template>
 
@@ -15,7 +15,7 @@
 </script>
 
 <style scoped>
-  div.actions{
+  div#actions{
     background: green;
   }
 </style>

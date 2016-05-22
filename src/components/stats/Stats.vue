@@ -1,5 +1,5 @@
 <template>
-  <div id="stats-panel" class="stats three columns">
+  <div>
     <h2>{{ msg }}</h2>
   </div>
 </template>
