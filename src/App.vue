@@ -1,9 +1,9 @@
-<template>
+<template>  
   <div class="container" id="app">
     <div class="row">
-      <log  id="logs-panel" class="eight columns"></log>
-      <actions id="actions-panel" class="eight columns"></actions>
-      <stats  id="stats-panel" class="eight columns"></stats>
+      <log  id="logs-panel" class="col m3"></log>
+      <actions id="actions-panel" class="col m6"></actions>
+      <stats  id="stats-panel" class="col m3"></stats>
     </div>
   </div>
 </template>
@@ -32,10 +32,17 @@ body {
   height: 100%;
 }
 
+#logs-panel{
+}
+#actions-panel{
+}
+#stats-panel{
+}
+
 #app {
   color: #2c3e50;
   margin-top: -100px;
-  max-width: 600px;
+  width: 100%;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   text-align: center;
 }

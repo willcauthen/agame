@@ -1,5 +1,6 @@
-require('skeleton-css/css/normalize.css')
-require('skeleton-css/css/skeleton.css')
+require('materialize-css/bin/materialize.js')
+require('materialize-css/bin/materialize.css')
+
 import Vue from 'vue'
 import App from './App'
 
