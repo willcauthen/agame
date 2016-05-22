@@ -5,6 +5,7 @@
       <log></log>
       <actions></actions>
       <stats></stats>
+      <h1></h1>
     </div>
   </div>
 </template>

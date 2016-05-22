@@ -1,6 +1,6 @@
 <template>
   <div class="log three columns">
-		<h2>{{ msg }}</h2>
+		<h1>{{ msg }}</h1>
     <ul>
       <li></li>
     </ul>
@@ -10,7 +10,7 @@
   export default {
     data () {
       return {
-        msg: 'here lie the logs',
+        msg: 'Hello World!',
         events: [
           {msg: 'first event'},
           {msg: 'second event'},
