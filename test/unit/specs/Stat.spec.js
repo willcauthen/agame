@@ -1,13 +1,20 @@
 import Vue from 'vue'
 import Stat from 'src/components/stats/Stat'
+import action from 'src/components/actions/action'
+import store from 'src/vuex/store'
 
 describe('Stat.vue', () => {
-  it('It should render its header', () => {
+  it('Simple stat should start at 0, and be incremented when button clicked', () => {
     const vm = new Vue({
-      template: '<div><stat></stat></div>',
-      components: { Stat }
+      template: '<div><action></action><stat></stat></div>',
+      components: { Stat, action },
+      store
     }).$mount()
     expect(vm.$el.querySelector('.stat-name').textContent).to.contain('simple stat')
-    expect(vm.$el.querySelector('.stat-value').textContent).to.contain('10')
+    expect(vm.$el.querySelector('.stat-value').textContent).to.contain('0')
+    vm.$el.querySelector('.stat1btn').click()
+    Vue.nextTick(function () {
+      expect(vm.$el.querySelector('.stat-value').textContent).to.contain('1')
+    })
   })
 })

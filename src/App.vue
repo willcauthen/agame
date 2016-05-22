@@ -12,11 +12,12 @@
 import Log from './components/logs/Log'
 import Actions from './components/actions/Actions'
 import Stats from './components/stats/Stats'
+import store from './vuex/store'
 
 export default {
   components: {
     Log, Actions, Stats
-  }
+  }, store
 }
 </script>
 
