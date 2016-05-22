@@ -10,7 +10,13 @@
   export default {
     data () {
       return {
-        msg: 'here lie the logs'
+        msg: 'here lie the logs',
+        events: [
+          {msg: 'first event'},
+          {msg: 'second event'},
+          {msg: 'third event'},
+          {msg: 'fourth event'}
+        ]
       }
     }
   }

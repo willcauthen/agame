@@ -11,7 +11,7 @@
 
 <script>
 import Log from './components/logs/Log'
-import Actions from './components/Actions/actions'
+import Actions from './components/actions/Actions'
 import Stats from './components/Stats/stats'
 
 export default {
