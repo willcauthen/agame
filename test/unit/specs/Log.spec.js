@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Log from 'src/components/logs/log'
+import Log from 'src/components/logs/Log'
 
 describe('log.vue', () => {
   it('It should render its header', () => {
