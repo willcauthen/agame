@@ -2,20 +2,20 @@
   <div class="log-panel">
 		<h1 class="log-header">Log Panel</h1>
     <ul>
-      <li></li>
+      <li v-for="event in events"> {{ event.thing }}</li>
     </ul>
   </div>
 </template>
 <script>
-  export default {
+  export default{
     data () {
       return {
         msg: 'Hello World!',
         events: [
-          {msg: 'first event'},
-          {msg: 'second event'},
-          {msg: 'third event'},
-          {msg: 'fourth event'}
+          {thing: 'first event'},
+          {thing: 'second event'},
+          {thing: 'third event'},
+          {thing: 'frth event'}
         ]
       }
     }
