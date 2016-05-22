@@ -9,7 +9,7 @@ module.exports = {
       .assert.elementPresent('.logo')
       .assert.containsText('h1', 'Hello World!')
       .assert.containsText('h2', 'actions are thus set up')
-      .assert.containsText('.stats-panel', 'stats are set up, too')
+      .assert.containsText('#stats-panel', 'stats are set up, too')
       .end()
   }
 }
