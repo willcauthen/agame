@@ -1,5 +1,5 @@
 <template>
-  <div class="log">
+  <div class="log three columns">
 		<h2>{{ msg }}</h2>
     <ul>
       <li></li>
