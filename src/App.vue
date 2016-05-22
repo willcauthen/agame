@@ -6,6 +6,9 @@
       <actions></actions>
       <stats></stats>
       <h1></h1>
+      <p></p>
+      <p></p>
+      <p></p>
     </div>
   </div>
 </template>
