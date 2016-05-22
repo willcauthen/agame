@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <h2>{{ msg }}</h2>
+  <div class="stats-panel">
+    <h5 class="stats-header">Status</h5>
+    <stat></stat>
   </div>
 </template>
 
 <script>
+  import Stat from './Stat.vue'
+
   export default {
+    components: { Stat },
     data () {
       return {
         msg: 'stats are set up, too'

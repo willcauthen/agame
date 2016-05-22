@@ -1,9 +1,9 @@
 <template>
   <div class="container" id="app">
     <div class="row">
-      <log  id="logs-panel" class="four columns"></log>
-      <actions id="actions-panel" class="four columns"></actions>
-      <stats  id="stats-panel" class="four columns"></stats>
+      <log  id="logs-panel" class="eight columns"></log>
+      <actions id="actions-panel" class="eight columns"></actions>
+      <stats  id="stats-panel" class="eight columns"></stats>
     </div>
   </div>
 </template>
