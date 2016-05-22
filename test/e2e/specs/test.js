@@ -8,7 +8,8 @@ module.exports = {
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.logo')
       .assert.containsText('h1', 'Hello World!')
-      .assert.elementCount('p', 3)
+      .assert.containsText('h2', 'actions are thus set up')
+      .assert.containsText('h2', 'stats are set up, too')
       .end()
   }
 }
