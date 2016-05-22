@@ -17,6 +17,10 @@ npm run build
 # run unit tests
 npm run unit
 
+
+# run unit tests in the background and rerun every time you change a file
+npm run bunit
+
 # run e2e tests
 npm run e2e
 

@@ -8,7 +8,7 @@ module.exports = {
       .waitForElementVisible('#app', 5000)
       .assert.containsText('#logs-panel', 'Log Panel')
       .assert.containsText('#actions-header', 'Action Panel')
-      .assert.containsText('#stats-panel', 'stats are set up, too')
+      .assert.containsText('#stats-panel', 'Status')
       .end()
   }
 }

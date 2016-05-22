@@ -1,6 +1,6 @@
 <template>
-  <div>
-		<h1>Log Panel</h1>
+  <div class="log-panel">
+		<h1 class="log-header">Log Panel</h1>
     <ul>
       <li></li>
     </ul>
@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-  div.log {
+  div.log-panel {
     background: blue;
   }
 
