@@ -7,11 +7,16 @@
 </template>
 
 <script>
+  import { getCount } from '../../vuex/getter'
   export default {
+    vuex: {
+      getters: {
+        value: getCount
+      }
+    },
     data () {
       return {
         name: 'simple stat',
-        value: 10,
         min: 0,
         max: 100,
         msg: 'actions are thus set up'
