@@ -1,17 +1,19 @@
 <template>
   <div class="stat-panel row">
     <p class="stat-name">{{name}}</p>
+    <p class="stat-level">Level: {{level}}</p>
     <p class="stat-value">{{value}} </p>
     <progress value="{{value}}" max="{{max}}"></progress>
   </div>
 </template>
 
 <script>
-  import { getCount } from '../../vuex/getter'
+  import { getCount, getLevel } from '../../vuex/getter'
   export default {
     vuex: {
       getters: {
-        value: getCount
+        value: getCount,
+        level: getLevel
       }
     },
     data () {
