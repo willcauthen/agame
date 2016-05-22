@@ -12,7 +12,7 @@
 <script>
 import Log from './components/logs/Log'
 import Actions from './components/actions/Actions'
-import Stats from './components/Stats/stats'
+import Stats from './components/stats/Stats'
 
 export default {
   components: {
