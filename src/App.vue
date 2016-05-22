@@ -1,34 +1,26 @@
 <template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <Log></Log>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+  <div class="container" id="app">
+    <div class="row">
+      <img class="logo" src="./assets/logo.png">
+      <log></log>
+      <actions></actions>
+      <stats></stats>
+      <h1></h1>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
   </div>
 </template>
 
 <script>
 import Log from './components/logs/Log'
-// import Actions from './components/Actions'
+import Actions from './components/actions/Actions'
+import Stats from './components/stats/Stats'
 
 export default {
   components: {
-    Log
+    Log, Actions, Stats
   }
 }
 </script>
