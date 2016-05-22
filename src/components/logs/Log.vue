@@ -1,6 +1,6 @@
 <template>
-  <div class="log three columns">
-		<h1>{{ msg }}</h1>
+  <div>
+		<h1>Log Panel</h1>
     <ul>
       <li></li>
     </ul>
@@ -26,5 +26,5 @@
   div.log {
     background: blue;
   }
-  
+
 </style>
