@@ -24,7 +24,5 @@
 
 <style scoped>
   div.log-panel {
-    background: blue;
   }
-
 </style>
