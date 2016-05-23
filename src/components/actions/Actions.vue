@@ -19,6 +19,5 @@
 
 <style scoped>
   div#actions{
-    background: green;
   }
 </style>

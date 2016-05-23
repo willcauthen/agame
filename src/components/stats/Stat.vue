@@ -35,14 +35,13 @@
      float: right;
   }
   div#actions{
-    background: green;
   }
   progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
 
-  width: 250px;
+  width: 75%;
   height: 20px;
 }
 </style>

@@ -23,27 +23,27 @@ export default {
 
 <style>
 html {
-  height: 100%;
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 #logs-panel{
+  border: 3px solid black;
 }
 #actions-panel{
+  border: 3px solid black;
 }
 #stats-panel{
+  border: 3px solid black;
 }
 
 #app {
   color: #2c3e50;
-  margin-top: -100px;
-  width: 100%;
+  width: 90%;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   text-align: center;
 }
@@ -53,8 +53,12 @@ body {
   text-decoration: none;
 }
 
+#app div {
+  color: grey; 
+}
+
 .logo {
   width: 100px;
-  height: 100px
+  height: 100px;
 }
 </style>
