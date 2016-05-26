@@ -1,7 +1,7 @@
 <template>
   <div class="stats-panel">
     <h5 class="stats-header">Status</h5>
-    <stat></stat>
+    <stat></stat>  <!-- Do a for loop here over all of the stats in the store -->
   </div>
 </template>
 
