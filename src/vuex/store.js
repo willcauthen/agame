@@ -7,12 +7,17 @@ const state = {
   stats: {
     'intelligence': {
       name: 'intelligence',
-      level: 0,
+      level: 1,
       count: 0
     },
     'strength': {
       name: 'strength',
-      level: 0,
+      level: 1,
+      count: 0
+    },
+    'guile': {
+      name: 'guile',
+      level: 1,
       count: 0
     }
   },
@@ -25,7 +30,12 @@ const state = {
     },
     {
       affectedStat: 'strength',
-      text: 'did some push-ups',
+      text: 'do some push-ups',
+      increment: 10
+    },
+    {
+      affectedStat: 'guile',
+      text: 'snatch some purses',
       increment: 10
     }
   ]

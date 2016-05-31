@@ -7,6 +7,6 @@
 // }
 //
 export function getStat (state, name) {
-  console.log('inside the getStat function', state.stats['intelligence'].level)
-  return state.stats['intelligence'].level
+  console.log('inside the getStat function', state.stats)
+  return state.stats
 }
