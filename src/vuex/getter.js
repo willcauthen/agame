@@ -7,6 +7,7 @@
 // }
 //
 export function getStat (state, name) {
-  console.log('inside the getStat function', state.stats)
+  console.log('inside the getStat function', Object.keys(state.stats))
+  state.stats['keys'] = Object.keys(state.stats)
   return state.stats
 }
