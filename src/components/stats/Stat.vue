@@ -1,23 +1,10 @@
 <template>
-  <div class="stat-panel row">
-    <p class="stat-name">Name: {{skills.strength.name}}</p>
-    <p class="stat-level">Level: {{skills.strength.level}}</p>
-    <p class="stat-value">Value: {{skills.strength.count}} </p>
-    <progress value="{{skills.strength.count}}" max="{{max}}"></progress>
+  <div class="stat-panel row" v-for="key in skills.keys">
+    <p class="stat-name"> {{key}} </p>
+    <p class="stat-level">Level: {{skills[key].level}}</p>
+    <p class="stat-value">Value: {{skills[key].count}} </p>
+    <progress value="{{min}}" max="{{max}}"></progress>
   </div>
-    <div class="stat-panel row">
-    <p class="stat-name">Name: {{skills.intelligence.name}}</p>
-    <p class="stat-level">Level: {{skills.intelligence.level}}</p>
-    <p class="stat-value">Value: {{skills.intelligence.count}} </p>
-    <progress value="{{skills.intelligence.count}}" max="{{max}}"></progress>
-  </div>
-    <div class="stat-panel row">
-    <p class="stat-name">Name: {{skills.guile.name}}</p>
-    <p class="stat-level">Level: {{skills.guile.level}}</p>
-    <p class="stat-value">Value: {{skills.guile.count}} </p>
-    <progress value="{{skills.guile.count}}" max="{{max}}"></progress>
-  </div>
-
 </template>
 
 <script>
@@ -26,8 +13,6 @@
     vuex: {
       getters: {
         skills: getStat
-        // value: getCount,
-        // level: getLevel
       }
     },
     data () {
@@ -55,7 +40,7 @@
   -webkit-appearance: none;
    appearance: none;
 
-  width: 75%;
+  width: 30%;
   height: 20px;
 }
 </style>
