@@ -8,12 +8,13 @@
 </template>
 
 <script>
-  import { getCount, getLevel } from '../../vuex/getter'
+  import { getStat } from '../../vuex/getter'
   export default {
     vuex: {
       getters: {
-        value: getCount,
-        level: getLevel
+        level: getStat
+        // value: getCount,
+        // level: getLevel
       }
     },
     data () {

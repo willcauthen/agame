@@ -1,3 +1,3 @@
-export const incrementCounter = function ({ dispatch, state }) {
-  dispatch('INCREMENT', 10)
+export const incrementCounter = function ({ dispatch, state }, action) {
+  dispatch('INCREMENT', action)
 }

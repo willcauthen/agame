@@ -4,17 +4,42 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  count: 0,
-  level: 1
+  stats: {
+    'intelligence': {
+      name: 'intelligence',
+      level: 0,
+      count: 0
+    },
+    'strength': {
+      name: 'strength',
+      level: 0,
+      count: 0
+    }
+  },
+  actions:
+  [
+    {
+      affectedStat: 'intelligence',
+      text: 'read some books',
+      increment: 10
+    },
+    {
+      affectedStat: 'strength',
+      text: 'did some push-ups',
+      increment: 10
+    }
+  ]
 }
 
 const mutations = {
-  INCREMENT (state, amount) {
-    if (state.count > 99) {
-      state.count = state.count - 100
-      state.level++
+  INCREMENT (state, amount, action) {
+    var stat = action.affectedStat
+    action.affectedStat = state.stats[stat]
+    if (stat.count > 99) {
+      stat.count = stat.count - 100
+      stat.level++
     }
-    state.count = state.count + amount
+    stat.count = stat.count + action.increment
   }
 }
 
