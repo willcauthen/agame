@@ -43,11 +43,9 @@ const state = {
 
 const mutations = {
   INCREMENT (state, action) {
-    console.log('inside the increment function', action)
     for (var i = 0; i < state.actions.length; i++) {
       if (action === state.actions[i].affectedStat) {
         var stat = state.actions[i].affectedStat
-        console.log(stat)
         state.stats[stat].count += state.actions[i].increment
         if (state.stats[stat].count > 99) {
           state.stats[stat].count -= 100
