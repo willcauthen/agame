@@ -10,9 +10,9 @@ describe('Stat.vue', () => {
       components: { Stat, action },
       store
     }).$mount()
-    expect(vm.$el.querySelector('.stat-name').textContent).to.contain('simple stat')
+    expect(vm.$el.querySelector('.stat-name').textContent).to.contain('intelligence')
     expect(vm.$el.querySelector('.stat-value').textContent).to.contain('0')
-    vm.$el.querySelector('.stat1btn').click()
+    vm.$el.querySelector('.statBtn').click()
     Vue.nextTick(function () {
       expect(vm.$el.querySelector('.stat-value').textContent).to.contain('1')
     })
