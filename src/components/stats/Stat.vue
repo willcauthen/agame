@@ -18,7 +18,7 @@
     },
     data () {
       return {
-        name: 'simple stat',
+        name: 'intelligence',
         min: 0,
         max: 100,
         msg: 'actions are thus set up'
@@ -43,5 +43,5 @@
 
   width: 75%;
   height: 20px;
-}
+  }
 </style>
