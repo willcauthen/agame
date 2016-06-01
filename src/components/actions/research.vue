@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button class="statBtn" @click="incrementStat('intelligence')">Fervently research</button>
-    <button class="statBtn" @click="incrementStat('strength')">Smash some boxes</button>
-    <button class="statBtn" @click="incrementStat('guile')">Snatch some purses</button>
+    <button class="statBtn intelligence" @click="incrementStat('intelligence')">Fervently research</button>
+    <button class="statBtn strength" @click="incrementStat('strength')">Smash some boxes</button>
+    <button class="statBtn guile" @click="incrementStat('guile')">Snatch some purses</button>
     <p>{{msg}}</p>
   </div>
 </template>
