@@ -1,5 +1,5 @@
 <template>
-  <div class="stat-panel row" v-for="key in skills.keys">
+  <div v-for="key in skills.keys"class="stat-panel row {{key}}" >
     <p class="stat-name"> {{key}} </p>
     <p class="stat-level">Level: {{skills[key].level}}</p>
     <p class="stat-value">Value: {{skills[key].count}} </p>
