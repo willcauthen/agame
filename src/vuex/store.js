@@ -22,10 +22,7 @@ const state = {
     }
   },
 
-  events: [
-    {thing: 'first thing'},
-    {thing: 'second thing'}
-  ],
+  events: [],
 
   actions:
   [
@@ -55,7 +52,6 @@ const mutations = {
         console.log(state.actions[i].text)
         state.events.push({thing: state.actions[i].text})
         state.stats[stat].count += state.actions[i].increment
-        console.log()
         if (state.stats[stat].count > 99) {
           state.stats[stat].count -= 100
           state.stats[stat].level++
