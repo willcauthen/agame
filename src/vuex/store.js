@@ -49,14 +49,19 @@ const mutations = {
     for (var i = 0; i < state.actions.length; i++) {
       if (action === state.actions[i].affectedStat) {
         var stat = state.actions[i].affectedStat
-        console.log(state.actions[i].text)
         state.events.push({thing: state.actions[i].text})
         state.stats[stat].count += state.actions[i].increment
         if (state.stats[stat].count > 99) {
           state.stats[stat].count -= 100
           state.stats[stat].level++
+          state.events.push({thing: 'LEVELED UP YOUR ' + stat.toUpperCase()})
         }
       }
+    }
+    if (state.events.length > 10) {
+      var x = state.events.length - 10
+      console.log("it's over 9000, eric", x, state.events)
+      state.events.splice(0, x)
     }
   }
 }
