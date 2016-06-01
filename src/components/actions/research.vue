@@ -1,19 +1,18 @@
 <template>
   <div>
-    <button @click="increment">Fervently research</button>
-    <button>Smash some boxes</button>
-    <button>Snatch some purses</button>
+    <button @click="incrementStat('intelligence')">Fervently research</button>
+    <button @click="incrementStat('strength')">Smash some boxes</button>
+    <button @click="incrementStat('guile')">Snatch some purses</button>
     <p>{{msg}}</p>
   </div>
 </template>
 
 <script>
-  // import research from 'vuex'
-  import {incrementIntel} from '../../vuex/research'
+  import {incrementStat} from '../../vuex/research'
   export default {
     vuex: {
       actions: {
-        increment: incrementIntel
+        incrementStat: incrementStat
       }
     },
     data () {
