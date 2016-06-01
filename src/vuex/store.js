@@ -60,7 +60,7 @@ const mutations = {
     }
     if (state.events.length > 10) {
       var x = state.events.length - 10
-      console.log("it's over 9000, eric", x, state.events)
+      console.log("it's over 9000, eric")
       state.events.splice(0, x)
     }
   }
