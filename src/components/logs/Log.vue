@@ -7,19 +7,17 @@
   </div>
 </template>
 <script>
-  export default{
+  import store from '../../vuex/store'
+  export default {
+    components: {store},
     data () {
       return {
         msg: 'Hello World!',
-        events: [
-          {thing: 'first event'},
-          {thing: 'second event'},
-          {thing: 'third event'},
-          {thing: 'frth event'}
-        ]
+        events: store.state.events
       }
     }
   }
+  console.log('hey ', store.state.events)
 </script>
 
 <style scoped>
