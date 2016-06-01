@@ -42,17 +42,31 @@ const state = {
 }
 
 const mutations = {
+//   INCREMENT (state, amount, action) {
+//     var stat = state.actions[0].affectedStat
+//     console.log(stat)
+//     state.stats[stat].count += state.actions[0].increment
+//     console.log(state.stats[stat].count, state.stats[stat].level)
+//     if (state.stats[stat].count > 99) {
+//       state.stats[stat].count -= 100
+//       state.stats[stat].level++
+//     }
+//   }
   INCREMENT (state, amount, action) {
-    var stat = state.actions[0].affectedStat
-    state.stats[stat].count += state.actions[0].increment
-    console.log(state.stats[stat].count, state.stats[stat].level)
-    if (state.stats[stat].count > 99) {
-      state.stats[stat].count -= 100
-      state.stats[stat].level++
+    console.log('inside the increment function', action)
+    for (var i = 0; i < state.actions.length; i++) {
+      if (action === state.actions[i].affectedStat) {
+        var stat = state.actions[i].affectedStat
+        console.log(stat)
+        state.stats[stat].count += state.actions[i].increment
+        if (state.stats[stat].count > 99) {
+          state.stats[stat].count -= 100
+          state.stats[stat].level++
+        }
+      }
     }
   }
 }
-
 export default new Vuex.Store({
   state,
   mutations
