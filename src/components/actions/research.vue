@@ -22,3 +22,23 @@
     }
   }
 </script>
+
+<style scoped>
+  p.stat-panel{
+    float: left;
+  }
+  p.stat-value{
+     float: right;
+     padding-right: 10px;
+  }
+  div#actions{
+  }
+  progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 30%;
+  height: 20px;
+}
+</style>
