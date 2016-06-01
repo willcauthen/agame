@@ -17,7 +17,7 @@
     },
     data () {
       return {
-        msg: 'research thing is wired and primed'
+        msg: 'research thing is wired up and primed'
       }
     }
   }
