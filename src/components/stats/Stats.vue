@@ -1,7 +1,7 @@
 <template>
   <div class="stats-panel">
     <h5 class="stats-header">Status</h5>
-    <stat>{{stat.guile}}</stat>
+    <stat></stat>
   </div>
 </template>
 
