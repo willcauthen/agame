@@ -1,15 +1,9 @@
 <template>
-  <div class="stat-panel row">
-    <p class="stat-name">{{name}}</p>
-    <p class="stat-level">Level: {{level}}</p>
-    <p class="stat-value">{{value}}</p>
-    <progress value="{{min}}" max="{{max}}"></progress>
-  </div>
   <div class="stat-panel row" v-for="key in skills.keys">
     <p class="stat-name"> {{key}} </p>
     <p class="stat-level">Level: {{skills[key].level}}</p>
     <p class="stat-value">Value: {{skills[key].count}} </p>
-    <progress value="{{value}}" max="{{max}}"></progress>
+    <progress value="{{skills[key].count}}" max="{{max}}"></progress>
   </div>
 </template>
 
