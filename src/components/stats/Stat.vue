@@ -1,9 +1,15 @@
 <template>
+  <div class="stat-panel row">
+    <p class="stat-name">{{name}}</p>
+    <p class="stat-level">Level: {{level}}</p>
+    <p class="stat-value">{{value}}</p>
+    <progress value="{{min}}" max="{{max}}"></progress>
+  </div>
   <div class="stat-panel row" v-for="key in skills.keys">
     <p class="stat-name"> {{key}} </p>
     <p class="stat-level">Level: {{skills[key].level}}</p>
     <p class="stat-value">Value: {{skills[key].count}} </p>
-    <progress value="{{min}}" max="{{max}}"></progress>
+    <progress value="{{value}}" max="{{max}}"></progress>
   </div>
 </template>
 
@@ -27,11 +33,12 @@
 </script>
 
 <style scoped>
-  p.stat-name{
+  p.stat-panel{
     float: left;
   }
   p.stat-value{
      float: right;
+     padding-right: 10px;
   }
   div#actions{
   }
