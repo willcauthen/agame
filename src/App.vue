@@ -34,7 +34,7 @@ body {
 #logs-panel{
   border: 3px solid black;
 }
-#actions-panel{
+#actions{
   border: 3px solid black;
 }
 #stats-panel{

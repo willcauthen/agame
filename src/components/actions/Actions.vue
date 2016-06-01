@@ -1,14 +1,15 @@
 <template>
   <div id="actions">
     <h2 id="actions-header">Action Panel</h2>
-    <action></action>
+    <p>{{msg}}</p>
+    <research></research>  
   </div>
 </template>
 
 <script>
-  import action from './action'
+  import research from './research'
   export default {
-    components: { action },
+    components: { research },
     data () {
       return {
         msg: 'actions are thus set up'

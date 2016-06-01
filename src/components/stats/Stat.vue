@@ -1,19 +1,18 @@
 <template>
-  <div class="stat-panel row">
-    <p class="stat-name">{{name}}</p>
-    <p class="stat-level">Level: {{level}}</p>
-    <p class="stat-value">{{value}} </p>
-    <progress value="{{value}}" max="{{max}}"></progress>
+  <div v-for="key in skills.keys"class="stat-panel row {{key}}" >
+    <p class="stat-name"> {{key}} </p>
+    <p class="stat-level">Level: {{skills[key].level}}</p>
+    <p class="stat-value">Value: {{skills[key].count}} </p>
+    <progress value="{{skills[key].count}}" max="{{max}}"></progress>
   </div>
 </template>
 
 <script>
-  import { getCount, getLevel } from '../../vuex/getter'
+  import { getStat } from '../../vuex/getter'
   export default {
     vuex: {
       getters: {
-        value: getCount,
-        level: getLevel
+        skills: getStat
       }
     },
     data () {
@@ -28,11 +27,12 @@
 </script>
 
 <style scoped>
-  p.stat-name{
+  p.stat-panel{
     float: left;
   }
   p.stat-value{
      float: right;
+     padding-right: 10px;
   }
   div#actions{
   }
@@ -41,7 +41,7 @@
   -webkit-appearance: none;
    appearance: none;
 
-  width: 75%;
+  width: 30%;
   height: 20px;
   }
 </style>
