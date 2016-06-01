@@ -17,10 +17,5 @@ describe('Stat.vue', () => {
     expect(vm.$el.querySelector('.intelligence .stat-value').textContent).to.contain('0')
     expect(vm.$el.querySelector('.strength .stat-value').textContent).to.contain('0')
     expect(vm.$el.querySelector('.guile .stat-value').textContent).to.contain('0')
-    // expect(vm.$el.querySelector('.stat-value').textContent).to.contain('0')
-    // vm.$el.querySelector('.statBtn').click()
-    // Vue.nextTick(function () {
-      // expect(vm.$el.querySelector('.stat-value').textContent).to.contain('1')
-    // })
   })
 })
