@@ -13,9 +13,18 @@ describe('research.vue', () => {
     expect(vm.$el.querySelector('button.intelligence')).to.be.ok
     expect(vm.$el.querySelector('button.strength')).to.be.ok
     expect(vm.$el.querySelector('button.guile')).to.be.ok
+    // each button should increment it's stat
+    // intelligence, should always be spelled with two 'l's
+    expect(store.state.stats.intelligence.count).to.equal(0)
     vm.$el.querySelector('button.intelligence').click()
-    // Vue.nextTick(function () {
-    //   expect(vm.$el.querySelector('.intelligence .stat-value').textContent).to.contain('1')
-    // })
+    expect(store.state.stats.intelligence.count).to.not.equal(0)
+    // strength
+    expect(store.state.stats.strength.count).to.equal(0)
+    vm.$el.querySelector('button.strength').click()
+    expect(store.state.stats.strength.count).to.not.equal(0)
+    // guile
+    expect(store.state.stats.guile.count).to.equal(0)
+    vm.$el.querySelector('button.guile').click()
+    expect(store.state.stats.guile.count).to.not.equal(0)
   })
 })
